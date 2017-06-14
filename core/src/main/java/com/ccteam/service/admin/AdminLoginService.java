@@ -27,9 +27,6 @@ public class AdminLoginService implements UserDetailsService {
     @Override
     @Transactional(readOnly = true)
     public UserDetails loadUserByUsername(String username) {
-        Optional<Admin> admin = adminRepository.findByUsername(new AdminUsername(username));
-        if (admin == null)
-            throw new UsernameNotFoundException("Bad credentials");
-        return new User(admin.get().getAdminUsername().getValue(), admin.get().getAdminPassword().getPassword().getValue(), AuthorityUtils.createAuthorityList(admin.get().getAdminRole().getName()));
+        return new AdminLoginUser(adminRepository.findByUsername(new AdminUsername(username)).orElseThrow(() -> new AdminNotFoundException()));
     }
 }

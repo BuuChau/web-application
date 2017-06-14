@@ -30,7 +30,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     public void configure(WebSecurity webSecurity) throws Exception {
         webSecurity.ignoring().antMatchers(
-                "/assets/**",
+                "/assets/**","/resources/**", "/static/**", "/css/**", "/js/**", "/images/**",
                 "/webjars/**");
     }
 
@@ -40,7 +40,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 //.antMatchers("/**").permitAll()
                 .antMatchers("/auth/**", "/error").permitAll()
                 .antMatchers("/image/**").permitAll()
-                .antMatchers("/finger/**").permitAll()
+                //.antMatchers("/finger/**").permitAll()
                 //.antMatchers("/gym/**").hasAuthority(AdminRole.Administrator.name())
                 //.antMatchers("/gym/**").hasAnyAuthority(AdminRole.Staff.name(),AdminRole.Administrator.name())
                 //.antMatchers("/gym/**").hasAnyAuthority(AdminRole.Administrator.name(),AdminRole.Staff.name(), AdminRole.Customer.name())

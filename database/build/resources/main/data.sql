@@ -1,12 +1,12 @@
 INSERT INTO `account` (`account_id`, `username`,`email`, `password`, `role`, `code`, `status`, `start_date`, `end_date`,`update_date`,`update_user`,`update_program`)
 VALUES
-	(1, 'NVCUONG01','NVCUONG01@gmail.com', '$2y$10$fBB6.Ceqg.qxiMcQL6jm1u9Q0R4uWk2SKoe/7GQ4NJccXfRhWj6vi', 'Administrator', 'xxxx-xxxx-xxxx-xxxx', 1,'2017-06-05','2017-09-30',NULL , NULL, NULL),
-	(2, 'NVCUONG02','NVCUONG02@gmail.com', '$2y$10$fBB6.Ceqg.qxiMcQL6jm1u9Q0R4uWk2SKoe/7GQ4NJccXfRhWj6vi', 'Staff', 'xxxx-xxxx-xxxx-xxxx', 1, '2017-06-05','2017-09-30',NULL , NULL, NULL),
-	(3, 'NVCUONG03','NVCUONG03@gmail.com', '$2y$10$fBB6.Ceqg.qxiMcQL6jm1u9Q0R4uWk2SKoe/7GQ4NJccXfRhWj6vi', 'Customer', 'xxxx-xxxx-xxxx-xxxx', 1, '2017-06-05','2017-09-30',NULL , NULL, NULL),
-	(4, 'NVCUONG04','NVCUONG04@gmail.com', '$2y$10$fBB6.Ceqg.qxiMcQL6jm1u9Q0R4uWk2SKoe/7GQ4NJccXfRhWj6vi', 'Customer', 'xxxx-xxxx-xxxx-xxxx', 1, '2017-06-05','2017-09-30',NULL , NULL, NULL),
-	(5, 'NVCUONG05','NVCUONG05@gmail.com', '$2y$10$fBB6.Ceqg.qxiMcQL6jm1u9Q0R4uWk2SKoe/7GQ4NJccXfRhWj6vi', 'Customer', 'xxxx-xxxx-xxxx-xxxx', 1, '2017-06-05','2017-09-30',NULL , NULL, NULL),
-	(6, 'NVCUONG06','NVCUONG06@gmail.com', '$2y$10$fBB6.Ceqg.qxiMcQL6jm1u9Q0R4uWk2SKoe/7GQ4NJccXfRhWj6vi', 'Customer', 'xxxx-xxxx-xxxx-xxxx', 1, '2017-06-05','2017-09-30',NULL , NULL, NULL),
-	(7, 'NVCUONG07','NVCUONG07@gmail.com', '$2y$10$fBB6.Ceqg.qxiMcQL6jm1u9Q0R4uWk2SKoe/7GQ4NJccXfRhWj6vi', 'Customer', 'xxxx-xxxx-xxxx-xxxx', 1, '2017-06-05','2017-09-30',NULL , NULL, NULL);
+	(1, 'NVCUONG01','NVCUONG01@gmail.com', '$2a$10$nIrCmJgppsqYAHi7gk7IjONmt6RLY8EMegi4DMywnrkpqHGqvBvZ6', 'Administrator', 'xxxx-xxxx-xxxx-xxxx', 1,'2017-06-05','2017-09-30',NULL , NULL, NULL),
+	(2, 'NVCUONG02','NVCUONG02@gmail.com', '$2a$10$nIrCmJgppsqYAHi7gk7IjONmt6RLY8EMegi4DMywnrkpqHGqvBvZ6', 'Staff', 'xxxx-xxxx-xxxx-xxxx', 1, '2017-06-05','2017-09-30',NULL , NULL, NULL),
+	(3, 'NVCUONG03','NVCUONG03@gmail.com', '$2a$10$nIrCmJgppsqYAHi7gk7IjONmt6RLY8EMegi4DMywnrkpqHGqvBvZ6', 'Customer', 'xxxx-xxxx-xxxx-xxxx', 1, '2017-06-05','2017-09-30',NULL , NULL, NULL),
+	(4, 'NVCUONG04','NVCUONG04@gmail.com', '$2a$10$nIrCmJgppsqYAHi7gk7IjONmt6RLY8EMegi4DMywnrkpqHGqvBvZ6', 'Customer', 'xxxx-xxxx-xxxx-xxxx', 1, '2017-06-05','2017-09-30',NULL , NULL, NULL),
+	(5, 'NVCUONG05','NVCUONG05@gmail.com', '$2a$10$nIrCmJgppsqYAHi7gk7IjONmt6RLY8EMegi4DMywnrkpqHGqvBvZ6', 'Customer', 'xxxx-xxxx-xxxx-xxxx', 1, '2017-06-05','2017-09-30',NULL , NULL, NULL),
+	(6, 'NVCUONG06','NVCUONG06@gmail.com', '$2a$10$nIrCmJgppsqYAHi7gk7IjONmt6RLY8EMegi4DMywnrkpqHGqvBvZ6', 'Customer', 'xxxx-xxxx-xxxx-xxxx', 1, '2017-06-05','2017-09-30',NULL , NULL, NULL),
+	(7, 'NVCUONG07','NVCUONG07@gmail.com', '$2a$10$nIrCmJgppsqYAHi7gk7IjONmt6RLY8EMegi4DMywnrkpqHGqvBvZ6', 'Customer', 'xxxx-xxxx-xxxx-xxxx', 1, '2017-06-05','2017-09-30',NULL , NULL, NULL);
 
 
 INSERT INTO `managementgym`(`managementgym_id`,`account_id`,`name`,`fullname`,`age`,`picture`,`phonenumber`,`codefinger`,`start_date`,`end_date`,`update_date`,`update_user`,`update_program`)

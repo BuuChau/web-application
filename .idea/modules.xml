@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/admin-ui/admin-ui.iml" filepath="$PROJECT_DIR$/.idea/modules/admin-ui/admin-ui.iml" group="admin-ui" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/admin-ui/admin-ui_main.iml" filepath="$PROJECT_DIR$/.idea/modules/admin-ui/admin-ui_main.iml" group="admin-ui" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/admin-ui/admin-ui_test.iml" filepath="$PROJECT_DIR$/.idea/modules/admin-ui/admin-ui_test.iml" group="admin-ui" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api/api.iml" filepath="$PROJECT_DIR$/.idea/modules/api/api.iml" group="api" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api/api_main.iml" filepath="$PROJECT_DIR$/.idea/modules/api/api_main.iml" group="api" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api/api_test.iml" filepath="$PROJECT_DIR$/.idea/modules/api/api_test.iml" group="api" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/core.iml" filepath="$PROJECT_DIR$/.idea/modules/core/core.iml" group="core" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/core_main.iml" filepath="$PROJECT_DIR$/.idea/modules/core/core_main.iml" group="core" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/core_test.iml" filepath="$PROJECT_DIR$/.idea/modules/core/core_test.iml" group="core" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/database/database.iml" filepath="$PROJECT_DIR$/.idea/modules/database/database.iml" group="database" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/database/database_main.iml" filepath="$PROJECT_DIR$/.idea/modules/database/database_main.iml" group="database" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/database/database_test.iml" filepath="$PROJECT_DIR$/.idea/modules/database/database_test.iml" group="database" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/finger.iml" filepath="$PROJECT_DIR$/.idea/modules/finger.iml" />
+    </modules>
+  </component>
+</project>
