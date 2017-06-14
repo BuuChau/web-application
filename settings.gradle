@@ -2,3 +2,5 @@ rootProject.name = 'finger'
 include 'admin-ui'
 include 'database'
 include 'core'
+include 'api'
+
