@@ -9,11 +9,11 @@ import java.io.Serializable;
 
 @PasswordConfirmed(fieldPassword = "value", fieldConfirm = "confirmValue")
 public class Password implements Serializable {
-    @NotBlank(message = "{user.update.form.error.notNull}")
-    @Size(min = 6, message = "{user.update.form.error.password.lenght}")
+    //@NotBlank(message = "{user.update.form.error.notNull}")
+    //@Size(min = 6, message = "{user.update.form.error.password.lenght}")
     String value;
-    @NotBlank(message = "{user.update.form.error.notNull}")
-    @Size(min = 6, message = "{user.update.form.error.password.lenght}")
+    //@NotBlank(message = "{user.update.form.error.notNull}")
+    //@Size(min = 6, message = "{user.update.form.error.password.lenght}")
     String confirmValue;
 
     public Password() {
