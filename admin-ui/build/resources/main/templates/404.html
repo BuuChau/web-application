@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <head th:replace="/gym/fragments/headers::common"></head>
+</head>
+<body class="skin-blue sidebar-mini                    pace-done">
+<div class="pace  pace-inactive">
+    <div class="pace-progress" data-progress-text="100%" data-progress="99"
+         style="transform: translate3d(100%, 0px, 0px);">
+        <div class="pace-progress-inner"></div>
+    </div>
+    <div class="pace-activity"></div>
+</div>
+<div id="app">
+    <div class="container container-table">
+        <div class="row vertical-10p">
+            <div class="container"><img th:src="@{/assets/img/public/logo.png}" class="center-block logo" />
+                <div class="text-center col-sm-6 col-sm-offset-3"><h1>You are lost.</h1> <h4>This page doesn't
+                    exist.</h4> <a href="https://copilot.mistergf.io/" class="router-link-active">Take me home.</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script th:replace="/gym/fragments/scripts::common"></script>
+</body>
+</html>

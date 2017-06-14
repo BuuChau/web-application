@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <head th:replace="/fragments/headers::common"></head>
+</head>
+<body class="skin-blue sidebar-mini  pace-done">
+<div class="pace  pace-inactive">
+    <div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+        <div class="pace-progress-inner"></div>
+    </div>
+    <div class="pace-activity"></div>
+</div>
+<div id="app">
+    <div class="wrapper">
+        <header th:replace="/fragments/menus::header"></header>
+        <aside th:replace="/fragments/menus::sidebar"></aside>
+        <div class="content-wrapper" style="min-height: 620px;">
+            <section class="content-header">
+                <h1> DASHBOARD <small>Overview of environment</small></h1>
+                <ol class="breadcrumb">
+                    <li><a href="javascript:;"><i class="fa fa-home"></i>Home</a></li>
+                    <li class="active">DASHBOARD</li>
+                </ol>
+            </section>
+            <section class="content">
+                <div class="row">
+                    <div class="alert alert-success alert-dismissible">
+                        <button type="button" data-dismiss="alert" aria-hidden="true" class="close">×</button>
+                        <h4><i class="icon fa fa-check"></i> Thông báo từ ban quản trị sẽ hiển thị ở đây!</h4>
+                        Link tới page thông báo tin tức mới.
+                        <a href="javascript:;" target="_blank"><i class="fa fa-newspaper-o fa-2x"></i></a></div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="info-box">
+                            <span class="info-box-icon bg-aqua"><i class="ion ion-ios-gear-outline"></i></span>
+                            <div class="info-box-content"><span class="info-box-text">CPU Traffic</span> <span class="info-box-number">90<small>%</small></span></div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="info-box">
+                            <span class="info-box-icon bg-red"><i class="fa fa-google-plus"></i></span>
+                            <div class="info-box-content"><span class="info-box-text">Likes</span> <span class="info-box-number">41,410</span></div>
+                        </div>
+                    </div>
+                    <div class="clearfix visible-sm-block"></div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="info-box"><span class="info-box-icon bg-green">
+                            <i class="ion ion-ios-cart-outline"></i></span>
+                            <div class="info-box-content"><span class="info-box-text">Sales</span> <span class="info-box-number">760</span></div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="info-box"><span class="info-box-icon bg-yellow">
+                            <i class="ion ion-ios-people-outline"></i></span>
+                            <div class="info-box-content"><span class="info-box-text">New Members</span> <span class="info-box-number">2,000</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="box">
+                        <div class="box-header with-border"><h3 class="box-title"></h3>
+                            <div class="box-body">
+                                <div class="col-sm-6 col-xs-12">
+                                    <p class="text-center"><strong>Web Traffic Overview</strong></p>
+                                    <canvas id="trafficBar" width="597" height="298" style="display: block; width: 597px; height: 298px;"></canvas>
+                                </div>
+                                <hr class="visible-xs-block" />
+                                <div class="col-sm-6 col-xs-12">
+                                    <p class="text-center"><strong>THÔNG TIN THÀNH VIÊN</strong></p>
+                                    <!--<canvas id="languagePie" width="596" height="298" style="display: block; width: 596px; height: 298px;"></canvas>-->
+                                    <div id="data" class="show-information-employee">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="info-box bg-yellow">
+                            <span class="info-box-icon"><i class="ion ion-ios-pricetag-outline"></i></span>
+                            <div class="info-box-content"><span class="info-box-text">Inventory</span> <span class="info-box-number">5,200</span>
+                                <div class="progress"><div class="progress-bar" style="width: 50%;"></div></div>
+                                <span class="progress-description">50% Increase</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="info-box bg-green">
+                            <span class="info-box-icon"><i class="ion ion-ios-heart-outline"></i></span>
+                            <div class="info-box-content"><span class="info-box-text">Mentions</span> <span class="info-box-number">92,050</span>
+                                <div class="progress"><div class="progress-bar" style="width: 20%;"></div></div>
+                                <span class="progress-description">20% Increase</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="info-box bg-red">
+                            <span class="info-box-icon"><i class="ion ion-ios-cloud-download-outline"></i></span>
+                            <div class="info-box-content"><span class="info-box-text">Downloads</span> <span class="info-box-number">114,381</span>
+                                <div class="progress"><div class="progress-bar" style="width: 70%;"></div></div>
+                                <span class="progress-description">70% Increase</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="info-box bg-aqua">
+                            <span class="info-box-icon"><i class="ion-ios-chatbubble-outline"></i></span>
+                            <div class="info-box-content"><span class="info-box-text">Direct Messages</span> <span class="info-box-number">163,921</span>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 40%;"></div>
+                                </div>
+                                <span class="progress-description">40% Increase</span></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer th:replace="/fragments/footers::footer"></footer>
+    </div>
+</div>
+<script th:replace="/fragments/scripts::common"></script>
+<script type="text/javascript" th:src="@{/js/chart/chart.app.js}"></script>
+<!--
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+-->
+
+<!--
+<script type="text/babel" th:src="@{/js/home/main.js}"></script>
+-->
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+group 'com.cctem'
+
+buildscript {
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+apply plugin: 'spring-boot'
+
+jar {
+    baseName = 'admin-ui'
+    version = '0.1.0'
+}
+
+bootRun {
+    if (project.hasProperty('args')) {
+        args project.args.split('\\s+')
+    }
+}
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-thymeleaf:${springBootVersion}")
+    compile("org.springframework.boot:spring-boot-starter-actuator:${springBootVersion}")
+    compile("org.thymeleaf.extras:thymeleaf-extras-springsecurity4:${thymeleafVersion}")
+    compile("org.thymeleaf.extras:thymeleaf-extras-conditionalcomments:${thymeleafVersion}")
+    compile("org.springframework.session:spring-session:1.2.1.RELEASE")
+    compile project(':core')
+}

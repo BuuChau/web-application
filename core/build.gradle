@@ -1,0 +1,18 @@
+group 'com.cctem'
+
+jar {
+    baseName = 'core'
+    version = '0.1.0'
+}
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-web:${springBootVersion}")
+    compile("org.springframework.boot:spring-boot-starter-jdbc:${springBootVersion}")
+    compile("org.springframework.boot:spring-boot-starter-security:${springBootVersion}")
+    compile("org.springframework.mobile:spring-mobile-device:${mobileDeviceVersion}")
+
+    compile("org.mybatis.spring.boot:mybatis-spring-boot-starter:1.1.1")
+    compile("org.mybatis:mybatis-typehandlers-jsr310:1.0.0")
+    compile("com.google.code.gson:gson:2.7")
+    runtime("mysql:mysql-connector-java:5.1.38")
+}
