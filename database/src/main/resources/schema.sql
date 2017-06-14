@@ -27,7 +27,9 @@ CREATE TABLE IF NOT EXISTS `fingermanagement`.`account` (
   `password` VARCHAR(60) NOT NULL, -- Mật khẩu
   `role` VARCHAR(45) NOT NULL, -- Loại : Admin - Quản lý cấp cao,Customer - khách hàng ,Staff - nhân viên quản trị
   `code` VARCHAR(45) NOT NULL, -- Mã active tài khoản
-  `status` BIT NOT NULL, -- Trạng thái tài khoản
+  `status_account` BIT NOT NULL, -- Trạng thái tài khoản
+  `status_sale` BIT NOT NULL, -- Trạng thái bán hàng
+  `status_report` BIT NOT NULL, -- Trạng thái xuất report
   `start_date` DATE NOT NULL, -- Ngày bắt đầu hoạt động
   `end_date` DATE NOT NULL, -- Ngày kết thúc trạng thái active.
   `update_date` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP, -- Ngày giờ cuối cùng update
