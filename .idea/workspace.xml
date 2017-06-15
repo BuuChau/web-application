@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b0325f8f-63fa-4c07-9d6e-26baecff2022" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin-ui/src/main/java/com/ccteam/web/gym/GymController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin-ui/src/main/resources/templates/change-pass.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin-ui/src/main/resources/templates/gym/index-list-member.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin-ui/src/main/resources/templates/gym/new-account.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin-ui/src/main/resources/templates/index-information.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin-ui/src/main/resources/templates/index-list-employee.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin-ui/src/main/resources/templates/index-list-member.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin-ui/src/main/resources/templates/new-employee.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin-ui/build/classes/main/com/ccteam/web/IndexController.class" afterPath="$PROJECT_DIR$/admin-ui/build/classes/main/com/ccteam/web/IndexController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin-ui/build/resources/main/assets/css/home/home.css" afterPath="$PROJECT_DIR$/admin-ui/build/resources/main/assets/css/home/home.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin-ui/build/resources/main/templates/fragments/menus.html" afterPath="$PROJECT_DIR$/admin-ui/build/resources/main/templates/fragments/menus.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin-ui/build/resources/main/templates/home.html" afterPath="$PROJECT_DIR$/admin-ui/build/resources/main/templates/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin-ui/build/resources/main/templates/new-account.html" afterPath="$PROJECT_DIR$/admin-ui/build/resources/main/templates/new-account.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin-ui/src/main/java/com/ccteam/web/IndexController.java" afterPath="$PROJECT_DIR$/admin-ui/src/main/java/com/ccteam/web/IndexController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin-ui/src/main/resources/assets/css/home/home.css" afterPath="$PROJECT_DIR$/admin-ui/src/main/resources/assets/css/home/home.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin-ui/src/main/resources/templates/fragments/menus.html" afterPath="$PROJECT_DIR$/admin-ui/src/main/resources/templates/fragments/menus.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin-ui/src/main/resources/templates/home.html" afterPath="$PROJECT_DIR$/admin-ui/src/main/resources/templates/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin-ui/src/main/resources/templates/new-account.html" afterPath="$PROJECT_DIR$/admin-ui/src/main/resources/templates/new-account.html" />
-    </list>
+    <list default="true" id="b0325f8f-63fa-4c07-9d6e-26baecff2022" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
     <ignored path="$PROJECT_DIR$/core/.gradle/" />
@@ -86,8 +66,8 @@
       <file leaf-file-name="index-list-member.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin-ui/src/main/resources/templates/gym/index-list-member.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="55" lean-forward="true" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
+            <state relative-caret-position="420">
+              <caret line="28" column="6" lean-forward="true" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -2070,16 +2050,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1497498042737</updated>
-      <workItem from="1497498046515" duration="7871000" />
+      <workItem from="1497498046515" duration="8077000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7871000" />
+    <option name="totallyTimeSpent" value="8077000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="105" y="23" width="1816" height="983" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -2100,10 +2080,10 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32996634" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24971814" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24971814" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -2321,8 +2301,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin-ui/src/main/resources/templates/gym/index-list-member.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="55" lean-forward="true" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
+        <state relative-caret-position="420">
+          <caret line="28" column="6" lean-forward="true" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
           <folding />
         </state>
       </provider>
