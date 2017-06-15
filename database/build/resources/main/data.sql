@@ -1,6 +1,6 @@
 INSERT INTO `account` (`account_id`, `username`,`email`, `password`, `role`, `code`, `status`, `start_date`, `end_date`,`update_date`,`update_user`,`update_program`)
 VALUES
-	(1, 'NVCUONG01','NVCUONG01@gmail.com', '$2a$10$nIrCmJgppsqYAHi7gk7IjONmt6RLY8EMegi4DMywnrkpqHGqvBvZ6', 'Administrator', 'xxxx-xxxx-xxxx-xxxx', 1,'2017-06-05','2017-09-30',NULL , NULL, NULL),
+	(1, 'NVCUONG01','NVCUONG01@gmail.com', '$2a$11$jOsRXChcxwZCShq/ob1FB.QvFwmAHFaL5v8EsZv806oJPk/Vl98ne', 'Administrator', 'xxxx-xxxx-xxxx-xxxx', 1,'2017-06-05','2017-09-30',NULL , NULL, NULL),
 	(2, 'NVCUONG02','NVCUONG02@gmail.com', '$2a$10$nIrCmJgppsqYAHi7gk7IjONmt6RLY8EMegi4DMywnrkpqHGqvBvZ6', 'Staff', 'xxxx-xxxx-xxxx-xxxx', 1, '2017-06-05','2017-09-30',NULL , NULL, NULL),
 	(3, 'NVCUONG03','NVCUONG03@gmail.com', '$2a$10$nIrCmJgppsqYAHi7gk7IjONmt6RLY8EMegi4DMywnrkpqHGqvBvZ6', 'Customer', 'xxxx-xxxx-xxxx-xxxx', 1, '2017-06-05','2017-09-30',NULL , NULL, NULL),
 	(4, 'NVCUONG04','NVCUONG04@gmail.com', '$2a$10$nIrCmJgppsqYAHi7gk7IjONmt6RLY8EMegi4DMywnrkpqHGqvBvZ6', 'Customer', 'xxxx-xxxx-xxxx-xxxx', 1, '2017-06-05','2017-09-30',NULL , NULL, NULL),
