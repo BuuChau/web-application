@@ -34,10 +34,6 @@
                     <ul class="dropdown-menu">
                         <li class="header">You have 0 task(s)</li> <!----> <!----></ul>
                 </li>
-                <!--<li class="dropdown user user-menu">
-                    <a href="javascript:;" data-toggle="dropdown" class="dropdown-toggle">
-                        <img th:src="@{/assets/img/public/128.jpg}" alt="User Image" class="user-image" />
-                        <span class="hidden-xs">Joshuah Kshlerin</span></a></li>-->
             </ul>
         </div>
     </nav>
@@ -48,7 +44,7 @@
         <div class="user-panel">
             <div class="pull-left image"><img th:src="@{/image/public/128.jpg}" /></div>
             <div class="pull-left info">
-                <div><p class="white">Joshuah Kshlerin</p></div>
+                <div><p class="white">${account.username}</p></div>
                 <a href="javascript:;"><i class="fa fa-circle text-success"></i> Online</a></div>
         </div>
         <form class="sidebar-form">
@@ -60,52 +56,40 @@
         <ul class="sidebar-menu">
             <li class="header">Quản Lý</li>
             <li class="active pageLink">
-                <a href="/gym/home" class="router-link-exact-active router-link-active">
-                    <i class="fa fa-desktop"></i> <span class="page">Trang Chủ</span></a></li>
-            <li class="pageLink">
-                <a href="/gym/khachhang" class="">
-                    <i class="fa fa-table"></i> <span class="page">Danh Sách Khách Hàng</span></a></li>
+                <a th:href="@{/home}" class="router-link-exact-active router-link-active">
+                    <i class="ion ion-home"></i> <span class="page">Trang Chủ</span></a></li>
+            <li class="treeview">
+                <a href="#"><i class="ion ion-android-person-add"></i> <span>DANH SÁCH</span> <span class="pull-right-container"><i class="fa fa-angle-left fa-fw pull-right"></i></span></a>
+                <ul class="treeview-menu">
+                    <li>
+                        <a th:if="${account.role == 'Administrator'}" th:href="@{/list-employee}" class="">
+                            <i class="ion ion-ios-people-outline"></i> <span class="page">Danh Sách Nhân Viên</span></a></li>
+                    <li>
+                        <a th:href="${account.role == 'Administrator' || account.role == 'Staff'} ? @{/list-member} : @{/gym/list-member}" class="">
+                            <i class="fa fa-table"></i> <span class="page">Danh Sách Khách Hàng</span></a></li>
+                </ul>
+            </li>
             <li class="header">Quản Lý Tài Khoản</li>
+            <li class="treeview">
+                <a href="#"><i class="ion ion-android-person-add"></i> <span>ĐĂNG KÝ</span> <span class="pull-right-container"><i class="fa fa-angle-left fa-fw pull-right"></i></span></a>
+                <ul class="treeview-menu">
+                    <li>
+                        <a th:if="${account.role == 'Administrator'}" th:href="@{/register-employee}" class="">
+                            <i class="ion ion-ios-people-outline"></i> <span class="page">Đăng Ký Nhân Viên</span></a></li>
+                    <li>
+                        <a th:href="${account.role == 'Administrator' || account.role == 'Staff'} ? @{/register-member} : @{/gym/register-member}" class="">
+                            <i class="ion ion-android-person-add"></i> <span class="page">Đăng Ký Khách Hàng</span></a></li>
+                </ul>
+            </li>
             <li class="pageLink">
-                <a th:href="${account.role == 'Administrator'} ? @{/gym/register} : @{/gym/customer/register}" class="">
-                    <i class="fa  fa-bell-o"></i> <span class="page">Đăng Ký Khách Hàng</span></a></li>
-            <li class="pageLink">
-                <a href="/gym/setting" class="">
-                    <i class="fa fa-unlock-alt"></i> <span class="page">Đổi Mật Khẩu</span></a></li>
+                <a href="/change/pass" class="">
+                    <i class="ion ion-unlocked"></i> <span class="page">Đổi Mật Khẩu</span></a></li>
 
             <li class="pageLink">
-                <a href="/gym/setting" class="">
-                    <i class="fa fa-user"></i> <span class="page">Đổi Thông Tin Cá Nhân</span></a></li>
-            <!--<li class="treeview">
-                <a href="javasctipt:;"><i class="fa fa-folder-o"></i>
-                <span>Files</span>
-                <span class="pull-right-container"><i class="fa fa-angle-left fa-fw pull-right"></i></span></a>
-                <ul class="treeview-menu">
-                    <li><a href="javasctipt:;"><i class="fa fa-file-word-o"></i> Item 1
-                    </a></li>
-                    <li><a href="javasctipt:;"><i class="fa fa-file-picture-o"></i> Item 2
-                    </a></li>
-                    <li><a href="javasctipt:;"><i class="fa fa-file-pdf-o"></i> Item 3
-                    </a></li>
-                </ul>
-            </li>-->
-            <!--<li class="header">LOGS</li>
-            <li class="pageLink">
-                <a th:href="@{/gym/register}" class="">
-                    <i class="ion ion-ios-people-outline"></i> <span class="page">New Member</span></a></li>
-            <li class="pageLink">
-                <a href="javascript:;" class="">
-                    <i class="fa fa-hdd-o"></i> <span class="page">Server</span></a></li>
-            <li class="pageLink">
-                <a href="javascript:;" class="">
-                    <i class="fa fa-heart"></i> <span class="page">Repos</span>
-                    <small class="label pull-right bg-green">AJAX</small>
-            </a></li>-->
-            <!--<li class="header">PAGES</li>
-            <li class="pageLink"><a href="/gym/login" class=""><i
-                    class="fa fa-circle-o text-yellow"></i> <span class="page"> Login</span></a></li>-->
+                <a href="/change/information" class="">
+                    <i class="ion ion-person"></i> <span class="page">Thông Tin Cá Nhân</span></a></li>
             <li class="pageLink"><a th:href="@{/auth/logout}" class=""><i
-                    class="fa fa-circle-o text-red"></i> <span class="page">Logout</span></a></li>
+                    class="ion ion-log-out"></i> <span class="page">Logout</span></a></li>
         </ul>
     </section>
 </aside>
