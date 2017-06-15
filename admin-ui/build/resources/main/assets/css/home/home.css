@@ -1,0 +1,15 @@
+.content-header>.breadcrumb-home {
+    float: left;
+    position: relative;
+    top: 5px;
+    right: 0px;
+}
+.show-check-finger {
+    min-height: 370px;
+}
+.height-box-finger {
+    min-height: 350px;
+}
+.bottom-padding-report {
+    margin-bottom : -15px;
+}

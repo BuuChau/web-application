@@ -2,23 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <head th:replace="/fragments/headers::common"></head>
-    <style type="text/css">
-        .content-header>.breadcrumb-home {
-            float: left;
-            position: relative;
-            top: 5px;
-            right: 0px;
-        }
-        .show-check-finger {
-            min-height: 370px;
-        }
-        .height-box-finger {
-            min-height: 350px;
-        }
-        .bottom-padding-report {
-            margin-bottom : -15px;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/home/home.css}" />
 </head>
 <body class="skin-blue sidebar-mini  pace-done">
 <div class="pace  pace-inactive">
@@ -50,13 +34,13 @@
                     <div class="col-md-3 col-sm-6 col-xs-12">
                         <div class="info-box">
                             <span class="info-box-icon bg-aqua"><i class="ion ion-ios-gear-outline"></i></span>
-                            <div class="info-box-content"><span class="info-box-text">CPU Traffic</span> <span class="info-box-number">90<small>%</small></span></div>
+                            <div class="info-box-content"><span class="info-box-text">Bán Nước</span> <span class="info-box-number">90<small>%</small></span></div>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-12">
                         <div class="info-box">
                             <span class="info-box-icon bg-red"><i class="fa fa-google-plus"></i></span>
-                            <div class="info-box-content"><span class="info-box-text">Likes</span> <span class="info-box-number">41,410</span></div>
+                            <div class="info-box-content"><span class="info-box-text">Bán Đồ Dủng</span> <span class="info-box-number">41,410</span></div>
                         </div>
                     </div>
                     <div class="clearfix visible-sm-block"></div>

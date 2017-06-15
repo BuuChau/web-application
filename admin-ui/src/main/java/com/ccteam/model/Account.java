@@ -1,5 +1,8 @@
 package com.ccteam.model;
 
+import com.ccteam.model.admin.Admin;
+
+import java.time.LocalDate;
 import java.util.Date;
 
 /**
@@ -9,12 +12,13 @@ public class Account {
 
     int accountId;
     String username;
+    String email;
     String password;
     String role;
     String code;
     boolean status;
-    Date startDate;
-    Date endDate;
+    LocalDate startDate;
+    LocalDate endDate;
 
     public Account(){}
 
@@ -22,16 +26,28 @@ public class Account {
         this.role = role;
     }
 
-    public Account(int accountId, String usermane, String password, String role, String code, boolean status, Date startDate, Date endDate) {
+    public Account(int accountId, String usermane, String email, String password, String role, String code, boolean status, LocalDate startDate, LocalDate endDate) {
 
         this.accountId = accountId;
         this.username = usermane;
+        this.email = email;
         this.password = password;
         this.role = role;
         this.code = code;
         this.status = status;
         this.startDate = startDate;
         this.endDate = endDate;
+    }
+
+    public Account(Admin admin) {
+        this.accountId = admin.getAdminId().getValue();
+        this.username = admin.getAdminUsername().getValue();
+        this.email = admin.getAdminEmail().getValue();
+        this.role = admin.getAdminRole().getName();
+        this.code = admin.getAdminCode().getValue();
+        this.status = admin.getAdminStatus().getValue();
+        this.startDate = admin.getAdminStartDate().getDate();
+        this.endDate = admin.getAdminEndDate().getDate();
     }
 
     public int getAccountId() {
@@ -58,11 +74,15 @@ public class Account {
         return status;
     }
 
-    public Date getStartDate() {
+    public LocalDate getStartDate() {
         return startDate;
     }
 
-    public Date getEndDate() {
+    public LocalDate getEndDate() {
         return endDate;
+    }
+
+    public String getEmail() {
+        return email;
     }
 }
