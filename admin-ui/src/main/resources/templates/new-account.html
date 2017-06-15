@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <head th:replace="/fragments/headers::common"></head>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/home/home.css}" />
+</head>
+<body class="skin-blue sidebar-mini  pace-done">
+<div class="pace  pace-inactive">
+    <div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+        <div class="pace-progress-inner"></div>
+    </div>
+    <div class="pace-activity"></div>
+</div>
+<div id="app">
+    <div class="wrapper">
+        <header th:replace="/fragments/menus::header"></header>
+        <aside th:replace="/fragments/menus::sidebar"></aside>
+        <div class="content-wrapper" style="min-height: 620px;">
+            <section class="content-header">
+                <h1> Đăng Ký Khách Hàng <small>Overview of environment</small></h1>
+                <ol class="breadcrumb">
+                    <li><a href="javascript:;"><i class="fa fa-home"></i>Home</a></li>
+                    <li class="active">REGISTER</li>
+                </ol>
+            </section>
+
+            <h1 class="text-center">REGISTER CUSTOMER</h1>
+
+            <section class="content">
+                <form th:href="@{/gym/register/insert}" method="post" th:object="${account}" class="ui form loginForm">
+                    <table class="table">
+                        <tr>
+                            <td style="width:70%;border-top: hidden;">
+                                <div class="text-center">
+                                    <div class="col-md-4 col-sm-offset-4" style="margin-left: 15%;width:80%;">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-user-plus"></i></span>
+                                            <input name="username" placeholder="Username" type="text" class="form-control" th:field="*{username}" />
+                                            <div class="help-block with-errors color-text-red" th:if="${#fields.hasErrors('username')}" th:errors="*{username}"></div>
+                                        </div>
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-unlock-alt"></i></span>
+                                            <input name="password" placeholder="Password" type="text" class="form-control" th:field="*{password}" />
+                                            <div class="help-block with-errors color-text-red" th:if="${#fields.hasErrors('password')}" th:errors="*{password}"></div>
+                                        </div>
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-odnoklassniki"></i></span>
+                                            <select id="select_level" th:field="*{role}" class="form-control" style="height: 4em;">
+                                                <option th:each="role : ${T(ccteam.model.Role).listRoles()}"
+                                                        th:value="${role.name()}" th:text="${role.name()}">Option</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-codepen"></i></span>
+                                            <input name="code" placeholder="Mã code" type="text" class="form-control" th:field="*{code}" />
+                                            <div class="help-block with-errors color-text-red" th:if="${#fields.hasErrors('code')}" th:errors="*{code}"></div>
+                                        </div>
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                            <input name="startDate" placeholder="Ngày bắt đầu" type="text" class="form-control" th:field="*{startDate}" />
+                                            <div class="help-block with-errors color-text-red" th:if="${#fields.hasErrors('startDate')}" th:errors="*{startDate}"></div>
+                                        </div>
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                            <input name="endDate" placeholder="Ngày kết thúc" type="text" class="form-control" th:field="*{endDate}" />
+                                            <div class="help-block with-errors color-text-red" th:if="${#fields.hasErrors('endDate')}" th:errors="*{endDate}"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td style="width:25%;border-top: hidden;">
+                                <div class="text-center">
+                                    <div>
+                                        <img width="200" height="200" th:src="@{/assets/img/public/picture.png}" alt="Image test" />
+                                        <button type="submit" class="btn btn-primary btn-lg ">Shot Picture</button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="border-top: hidden;">
+                                <div class="text-center" style="width: 100%;">
+                                    <button type="submit" class="btn btn-primary btn-lg" style="width: 20%;">Submit</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </section>
+        </div>
+        <footer th:replace="/fragments/footers::footer"></footer>
+    </div>
+</div>
+<script th:replace="/fragments/scripts::common"></script>
+<script type="text/babel" th:src="@{/js/home/main.jsx}"></script>
+
+</body>
+</html>

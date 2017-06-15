@@ -15,7 +15,7 @@ public class LoginController {
     @RequestMapping(value = "/finger/auth", method = RequestMethod.GET)
     public String form(Principal principal) {
         if (principal != null && !principal.getName().equals(""))
-            return "redirect:/gym/home";
+            return "redirect:/home";
         return "/auth/login";
     }
 }
