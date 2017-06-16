@@ -1,0 +1,19 @@
+group 'com.ccteam'
+version 'unspecified'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.5
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-thymeleaf:${springBootVersion}")
+    compile("org.springframework.boot:spring-boot-starter-actuator:${springBootVersion}")
+    compile("org.thymeleaf.extras:thymeleaf-extras-springsecurity4:${thymeleafVersion}")
+    compile("org.thymeleaf.extras:thymeleaf-extras-conditionalcomments:${thymeleafVersion}")
+    compile("org.springframework.session:spring-session:1.2.1.RELEASE")
+    compile project(':core')
+}

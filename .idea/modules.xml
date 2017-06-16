@@ -15,6 +15,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/database/database_main.iml" filepath="$PROJECT_DIR$/.idea/modules/database/database_main.iml" group="database" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/database/database_test.iml" filepath="$PROJECT_DIR$/.idea/modules/database/database_test.iml" group="database" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/finger.iml" filepath="$PROJECT_DIR$/.idea/modules/finger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tool-ui/tool-ui.iml" filepath="$PROJECT_DIR$/.idea/modules/tool-ui/tool-ui.iml" group="tool-ui" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tool-ui/tool-ui_main.iml" filepath="$PROJECT_DIR$/.idea/modules/tool-ui/tool-ui_main.iml" group="tool-ui" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tool-ui/tool-ui_test.iml" filepath="$PROJECT_DIR$/.idea/modules/tool-ui/tool-ui_test.iml" group="tool-ui" />
     </modules>
   </component>
 </project>
