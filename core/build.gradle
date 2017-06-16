@@ -9,7 +9,6 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-web:${springBootVersion}")
     compile("org.springframework.boot:spring-boot-starter-jdbc:${springBootVersion}")
     compile("org.springframework.boot:spring-boot-starter-security:${springBootVersion}")
-    compile("org.springframework.boot:spring-boot-starter-redis:${springBootVersion}")
     compile("org.springframework.mobile:spring-mobile-device:${mobileDeviceVersion}")
 
     compile("org.mybatis.spring.boot:mybatis-spring-boot-starter:1.1.1")
