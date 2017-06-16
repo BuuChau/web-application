@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head>
+    <head th:replace="/fragments/headers::common"></head>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/home/home.css}" />
+</head>
+<body class="skin-blue sidebar-mini  pace-done">
+<div class="pace  pace-inactive">
+    <div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+        <div class="pace-progress-inner"></div>
+    </div>
+    <div class="pace-activity"></div>
+</div>
+<div id="app">
+    <div class="wrapper">
+        <style type="text/css">
+            .bs-example{
+                margin: 20px;
+            }
+        </style>
+        <div class="bs-example">
+            <!-- Button HTML (to Trigger Modal) -->
+            <a href="#" class="btn btn-lg btn-primary">Launch Demo Modal</a>
+
+            <!-- Modal HTML -->
+            <div id="myModal" class="modal fade"></div>
+        </div>
+    </div>
+</div>
+<script th:replace="/fragments/scripts::common"></script>
+<script type="text/babel" th:src="@{/js/home/main.jsx}"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".btn").click(function(){
+            $("#myModal").modal('show');
+        });
+    });
+</script>
+</body>
+</html>

@@ -3,4 +3,5 @@ include 'admin-ui'
 include 'database'
 include 'core'
 include 'api'
+include 'tool-ui'
 
