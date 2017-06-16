@@ -49,15 +49,6 @@ public class IndexController {
         return "index-list-member";
     }
 
-    @RequestMapping(value = "/register-employee", method = RequestMethod.GET)
-    public String registerEmployee(Principal principal, Model model) {
-        model.addAttribute("title","Gym Register Employee");
-
-        Account account = new Account(adminService.getAccountByLogin(new AdminUsername(principal.getName())));
-        model.addAttribute("account",account);
-        return "new-employee";
-    }
-
     @RequestMapping(value = "/register-member", method = RequestMethod.GET)
     public String register(Principal principal, Model model) {
         model.addAttribute("title","Gym Register Member");

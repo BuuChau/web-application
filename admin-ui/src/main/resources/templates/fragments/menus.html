@@ -62,25 +62,16 @@
                 <a href="#"><i class="ion ion-android-person-add"></i> <span>DANH SÁCH</span> <span class="pull-right-container"><i class="fa fa-angle-left fa-fw pull-right"></i></span></a>
                 <ul class="treeview-menu">
                     <li>
-                        <a th:if="${account.role == 'Administrator'}" th:href="@{/list-employee}" class="">
+                        <a th:if="${account.role == 'Administrator' || account.role == 'Staff'}" th:href="@{/list-employee}" class="">
                             <i class="ion ion-ios-people-outline"></i> <span class="page">Danh Sách Nhân Viên</span></a></li>
                     <li>
                         <a th:href="${account.role == 'Administrator' || account.role == 'Staff'} ? @{/list-member} : @{/gym/list-member}" class="">
                             <i class="fa fa-table"></i> <span class="page">Danh Sách Khách Hàng</span></a></li>
                 </ul>
             </li>
-            <li class="header">Quản Lý Tài Khoản</li>
-            <li class="treeview">
-                <a href="#"><i class="ion ion-android-person-add"></i> <span>ĐĂNG KÝ</span> <span class="pull-right-container"><i class="fa fa-angle-left fa-fw pull-right"></i></span></a>
-                <ul class="treeview-menu">
-                    <li>
-                        <a th:if="${account.role == 'Administrator'}" th:href="@{/register-employee}" class="">
-                            <i class="ion ion-ios-people-outline"></i> <span class="page">Đăng Ký Nhân Viên</span></a></li>
-                    <li>
-                        <a th:href="${account.role == 'Administrator' || account.role == 'Staff'} ? @{/register-member} : @{/gym/register-member}" class="">
-                            <i class="ion ion-android-person-add"></i> <span class="page">Đăng Ký Khách Hàng</span></a></li>
-                </ul>
-            </li>
+            <li class="pageLink">
+                <a th:href="${account.role == 'Administrator' || account.role == 'Staff'} ? @{/register-member} : @{/gym/register-member}" class="">
+                    <i class="ion ion-android-person-add"></i> <span class="page">Đăng Ký Thành Viên</span></a></li>
             <li class="pageLink">
                 <a href="/change/pass" class="">
                     <i class="ion ion-unlocked"></i> <span class="page">Đổi Mật Khẩu</span></a></li>
