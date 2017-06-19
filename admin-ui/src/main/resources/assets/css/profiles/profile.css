@@ -1,0 +1,17 @@
+.block-grey {
+    width: 100%;
+    border-style: solid;
+    border-width: 1px;
+    padding: 30px;
+    background-color: #fdfdfd;
+    border-color: #dfdfdf;
+}
+
+.block-grey table {
+    width: 100%;
+}
+
+table {
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,39 @@
+#app{
+    height:100%;
+}
+
+.bs-example{
+    margin: 20px;
+}
+
+#origin
+{
+    background-color: lightgreen;
+}
+
+#origin img, #drop img {
+    margin-top: 3px;
+    margin-left: 5px;
+}
+
+#drop
+{
+    background-color: red;
+    min-height: 120px;
+}
+.over {
+    border: solid 5px purple;
+}
+.draggable
+{
+    border: solid 2px gray;
+}
+
+.demo {
+    width:150px;
+    height:150px;
+    padding:5px;
+    background-color:#ff8811;
+    top:150px;
+    left:300px;
+}
