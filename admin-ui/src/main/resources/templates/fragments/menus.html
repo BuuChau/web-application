@@ -1,6 +1,6 @@
 <header class="main-header" th:fragment="header">
     <span class="logo-mini">
-        <a href="javascript:;"><img th:src="@{/image/public/copilot-logo-white.svg}" alt="Logo" class="img-responsive center-block logo"/></a>
+        <a href="javascript:;"><img th:src="@{/images/public/copilot-logo-white.svg}" alt="Logo" class="img-responsive center-block logo"/></a>
     </span>
     <nav role="navigation" class="navbar navbar-static-top">
         <a href="javascript:;" style="text-decoration: none;" data-toggle="offcanvas" role="button" class="sidebar-toggle">
@@ -42,9 +42,9 @@
 <aside class="main-sidebar" th:fragment="sidebar">
     <section class="sidebar">
         <div class="user-panel">
-            <div class="pull-left image"><img th:src="@{/image/public/128.jpg}" /></div>
+            <div class="pull-left image"><img th:src="@{/images/public/128.jpg}" /></div>
             <div class="pull-left info">
-                <div><p class="white">${account.username}</p></div>
+                <div><p class="white" th:text="${account.username}">Username</p></div>
                 <a href="javascript:;"><i class="fa fa-circle text-success"></i> Online</a></div>
         </div>
         <form class="sidebar-form">

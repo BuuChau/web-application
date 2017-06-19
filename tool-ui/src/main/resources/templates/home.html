@@ -14,19 +14,27 @@
 </div>
 <div id="app">
     <div class="wrapper">
-        <style type="text/css">
-            .bs-example{
-                margin: 20px;
-            }
-        </style>
         <div class="bs-example">
             <!-- Button HTML (to Trigger Modal) -->
             <a href="#" class="btn btn-lg btn-primary">Launch Demo Modal</a>
+            <div id="wrapper">
+                <div id="origin" class="fbox">
+                    <img src="http://placehold.it/140x100" id="one" title="one" class="draggable" />
+                    <img src="http://placehold.it/150x100" id="two" title="two" class="draggable" />
+                    <img src="http://placehold.it/160x100" id="three" title="three" class="draggable" />
+                    <div class="demo">Move Me!!... Resize Me!!...</div>
+                </div>
+                <p>test</p>
+                <div id="drop" class="fbox">
 
+                </div>
+            </div>
             <!-- Modal HTML -->
             <div id="myModal" class="modal fade"></div>
         </div>
     </div>
+
+
 </div>
 <script th:replace="/fragments/scripts::common"></script>
 <script type="text/babel" th:src="@{/js/home/main.jsx}"></script>
@@ -36,6 +44,44 @@
             $("#myModal").modal('show');
         });
     });
+</script>
+<script type="text/javascript">
+    $(function() {
+        $(".draggable").draggable({ cursor: "crosshair", revert: "invalid"});
+        $("#drop").droppable({ accept: ".draggable",
+            drop: function(event, ui) {
+                console.log("drop");
+                $(this).removeClass("border").removeClass("over");
+                var dropped = ui.draggable;
+                var droppedOn = $(this);
+                $(dropped).detach().css({top: 0,left: 0}).appendTo(droppedOn);
+
+
+            },
+            over: function(event, elem) {
+                $(this).addClass("over");
+                console.log("over");
+            }
+            ,
+            out: function(event, elem) {
+                $(this).removeClass("over");
+            }
+        });
+        $("#drop").sortable();
+
+        $("#origin").droppable({ accept: ".draggable", drop: function(event, ui) {
+            console.log("drop");
+            $(this).removeClass("border").removeClass("over");
+            var dropped = ui.draggable;
+            var droppedOn = $(this);
+            $(dropped).detach().css({top: 0,left: 0}).appendTo(droppedOn);
+
+
+        }});
+
+        $('.demo').draggable().resizable();
+    });
+
 </script>
 </body>
 </html>

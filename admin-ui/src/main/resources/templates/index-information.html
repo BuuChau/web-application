@@ -2,8 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <head th:replace="/fragments/headers::common"></head>
-    <link rel="stylesheet" type="text/css" th:href="@{/css/home/home.css}" />
-    <link rel="stylesheet" type="text/css" th:href="@{https://colorlib.com/polygon/build/css/custom.min.css}" />
+    <link rel="stylesheet" type="text/css" th:src="@{/css/profiles/profile.css}" />
 </head>
 <body class="skin-blue sidebar-mini  pace-done">
 <div class="pace  pace-inactive">
@@ -25,313 +24,40 @@
                 </ol>
             </section>
             <section class="content">
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                    <div class="x_panel">
-                        <div class="x_title">
-                            <h2>User Report <small>Activity report</small></h2>
-                            <div class="clearfix"></div>
-                        </div>
-                        <div class="x_content">
-                            <div class="col-md-3 col-sm-3 col-xs-12 profile_left">
-                                <div class="profile_img">
-                                    <div id="crop-avatar">
-                                        <!-- Current avatar -->
-                                        <img class="img-responsive avatar-view" src="https://colorlib.com/polygon/gentelella/images/picture.jpg" alt="Avatar" title="Change the avatar" />
-                                    </div>
-                                </div>
-                                <h3>Samuel Doe</h3>
-
-                                <ul class="list-unstyled user_data">
-                                    <li><i class="fa fa-map-marker user-profile-icon"></i> San Francisco, California, USA
-                                    </li>
-
-                                    <li>
-                                        <i class="fa fa-briefcase user-profile-icon"></i> Software Engineer
-                                    </li>
-
-                                    <li class="m-top-xs">
-                                        <i class="fa fa-external-link user-profile-icon"></i>
-                                        <a href="http://www.kimlabs.com/profile/" target="_blank">www.kimlabs.com</a>
-                                    </li>
-                                </ul>
-
-                                <a class="btn btn-success"><i class="fa fa-edit m-right-xs"></i>Edit Profile</a>
-                                <br />
-
-                                <!-- start skills -->
-                                <h4>Skills</h4>
-                                <ul class="list-unstyled user_data">
-                                    <li>
-                                        <p>Web Applications</p>
-                                        <div class="progress progress_sm">
-                                            <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="50" aria-valuenow="50" style="width: 50%;"></div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <p>Website Design</p>
-                                        <div class="progress progress_sm">
-                                            <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="70" aria-valuenow="69" style="width: 70%;"></div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <p>Automation &amp; Testing</p>
-                                        <div class="progress progress_sm">
-                                            <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="30" aria-valuenow="28" style="width: 30%;"></div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <p>UI / UX</p>
-                                        <div class="progress progress_sm">
-                                            <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="50" aria-valuenow="50" style="width: 50%;"></div>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <!-- end of skills -->
-
-                            </div>
-                            <div class="col-md-9 col-sm-9 col-xs-12">
-
-                                <div class="profile_title">
-                                    <div class="col-md-6">
-                                        <h2>User Activity Report</h2>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div id="reportrange" class="pull-right" style="margin-top: 5px; background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #E6E9ED">
-                                            <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
-                                            <span>May 18, 2017 - June 16, 2017</span> <b class="caret"></b>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- start of user-activity-graph -->
-                                <div id="graph_bar" style="width: 100%; height: 280px; position: relative; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
-                                    <svg height="280" version="1.1" width="510" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="overflow: hidden; position: relative; left: -0.75px;">
-                                        <desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël @@VERSION</desc>
-                                        <defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs>
-                                        <text x="42.515625" y="213.3026007804375" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal">
-                                            <tspan dy="4.005725780437501" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">0</tspan>
-                                        </text>
-                                        <path fill="none" stroke="#aaaaaa" d="M55.015625,213.3026007804375H485" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
-                                        <text x="42.515625" y="166.22695058532813" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal">
-                                            <tspan dy="4.008200585328126" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">750</tspan>
-                                        </text>
-                                        <path fill="none" stroke="#aaaaaa" d="M55.015625,166.22695058532813H485" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
-                                        <text x="42.515625" y="119.15130039021875" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal">
-                                            <tspan dy="4.010675390218751" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">1,500</tspan>
-                                        </text>
-                                        <path fill="none" stroke="#aaaaaa" d="M55.015625,119.15130039021875H485" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
-                                        <text x="42.515625" y="72.07565019510938" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal">
-                                            <tspan dy="4.013150195109375" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2,250</tspan>
-                                        </text>
-                                        <path fill="none" stroke="#aaaaaa" d="M55.015625,72.07565019510938H485" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
-                                        <text x="42.515625" y="25" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal">
-                                            <tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">3,000</tspan>
-                                        </text>
-                                        <path fill="none" stroke="#aaaaaa" d="M55.015625,25H485" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
-                                        <text x="463.50078125" y="225.8026007804375" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(0.8192,-0.5736,0.5736,0.8192,-57.9788,321.0163)">
-                                            <tspan dy="4.005725780437501" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Other</tspan>
-                                        </text>
-                                        <text x="420.50234375" y="225.8026007804375" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(0.8192,-0.5736,0.5736,0.8192,-87.071,311.2835)">
-                                            <tspan dy="4.005725780437501" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">iPhone 6S Plus</tspan>
-                                        </text>
-                                        <text x="377.50390625" y="225.8026007804375" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(0.8192,-0.5736,0.5736,0.8192,-83.9219,278.975)">
-                                            <tspan dy="4.005725780437501" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">iPhone 6S</tspan>
-                                        </text>
-                                        <text x="334.50546875" y="225.8026007804375" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(0.8192,-0.5736,0.5736,0.8192,-99.3474,259.6616)">
-                                            <tspan dy="4.005725780437501" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">iPhone 6 Plus</tspan>
-                                        </text>
-                                        <text x="291.50703125" y="225.8026007804375" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(0.8192,-0.5736,0.5736,0.8192,-96.1933,227.3441)">
-                                            <tspan dy="4.005725780437501" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">iPhone 6</tspan>
-                                        </text>
-                                        <text x="248.50859375" y="225.8026007804375" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(0.8192,-0.5736,0.5736,0.8192,-107.2513,204.9836)">
-                                            <tspan dy="4.005725780437501" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">iPhone 5S</tspan>
-                                        </text>
-                                        <text x="205.51015625" y="225.8026007804375" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(0.8192,-0.5736,0.5736,0.8192,-111.7462,178.0166)">
-                                            <tspan dy="4.005725780437501" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">iPhone 5</tspan>
-                                        </text>
-                                        <text x="162.51171875" y="225.8026007804375" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(0.8192,-0.5736,0.5736,0.8192,-126.6234,158.3357)">
-                                            <tspan dy="4.005725780437501" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">iPhone 3GS</tspan>
-                                        </text>
-                                        <text x="119.51328125" y="225.8026007804375" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(0.8192,-0.5736,0.5736,0.8192,-130.5807,130.9922)">
-                                            <tspan dy="4.005725780437501" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">iPhone 4S</tspan>
-                                        </text>
-                                        <text x="76.51484375" y="225.8026007804375" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(0.8192,-0.5736,0.5736,0.8192,-135.0727,104.0342)">
-                                            <tspan dy="4.005725780437501" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">iPhone 4</tspan>
-                                        </text>
-                                        <rect x="60.3904296875" y="189.4509380149154" width="32.248828125" height="23.851662765522093" rx="0" ry="0" fill="#26b99a" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect>
-                                        <rect x="103.3888671875" y="172.18986627670864" width="32.248828125" height="41.11273450372886" rx="0" ry="0" fill="#26b99a" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect>
-                                        <rect x="146.38730468749998" y="196.04152904223074" width="32.248828125" height="17.261071738206766" rx="0" ry="0" fill="#26b99a" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect>
-                                        <rect x="189.3857421875" y="114.69480550508173" width="32.248828125" height="98.60779527535577" rx="0" ry="0" fill="#26b99a" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect>
-                                        <rect x="232.3841796875" y="172.18986627670864" width="32.248828125" height="41.11273450372886" rx="0" ry="0" fill="#26b99a" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect>
-                                        <rect x="275.3826171875" y="78.10133342008336" width="32.248828125" height="135.20126736035414" rx="0" ry="0" fill="#26b99a" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect>
-                                        <rect x="318.3810546875" y="141.49654234949733" width="32.248828125" height="71.80605843094017" rx="0" ry="0" fill="#26b99a" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect>
-                                        <rect x="361.3794921875" y="64.4807786302984" width="32.248828125" height="148.8218221501391" rx="0" ry="0" fill="#26b99a" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect>
-                                        <rect x="404.3779296875" y="120.97155886442964" width="32.248828125" height="92.33104191600786" rx="0" ry="0" fill="#26b99a" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect>
-                                        <rect x="447.3763671875" y="127.24831222377756" width="32.248828125" height="86.05428855665994" rx="0" ry="0" fill="#26b99a" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect>
-                                    </svg>
-                                    <div class="morris-hover morris-default-style" style="left: 320.504px; top: 111px; display: none;">
-                                        <div class="morris-hover-row-label">iPhone 6S</div>
-                                        <div class="morris-hover-point" style="color: #26B99A">
-                                            Geekbench: 2,371
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- end of user-activity-graph -->
-
-                                <div class="" role="tabpanel" data-example-id="togglable-tabs">
-                                    <ul id="myTab" class="nav nav-tabs bar_tabs" role="tablist">
-                                        <li role="presentation" class=""><a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab" aria-expanded="false">Recent Activity</a>
-                                        </li>
-                                        <li role="presentation" class=""><a href="#tab_content2" role="tab" id="profile-tab" data-toggle="tab" aria-expanded="false">Projects Worked on</a>
-                                        </li>
-                                        <li role="presentation" class="active"><a href="#tab_content3" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="true">Profile</a>
-                                        </li>
-                                    </ul>
-                                    <div id="myTabContent" class="tab-content">
-                                        <div role="tabpanel" class="tab-pane fade" id="tab_content1" aria-labelledby="home-tab">
-
-                                            <!-- start recent activity -->
-                                            <ul class="messages">
-                                                <li>
-                                                    <img src="https://colorlib.com/polygon/gentelella/images/img.jpg" class="avatar" alt="Avatar" />
-                                                    <div class="message_date">
-                                                        <h3 class="date text-info">24</h3>
-                                                        <p class="month">May</p>
-                                                    </div>
-                                                    <div class="message_wrapper">
-                                                        <h4 class="heading">Desmond Davison</h4>
-                                                        <blockquote class="message">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua butcher retro keffiyeh dreamcatcher synth.</blockquote>
-                                                        <br />
-                                                        <p class="url">
-                                                            <span class="fs1 text-info" aria-hidden="true" data-icon=""></span>
-                                                            <a href="#"><i class="fa fa-paperclip"></i> User Acceptance Test.doc </a>
-                                                        </p>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <img src="https://colorlib.com/polygon/gentelella/images/img.jpg" class="avatar" alt="Avatar" />
-                                                    <div class="message_date">
-                                                        <h3 class="date text-error">21</h3>
-                                                        <p class="month">May</p>
-                                                    </div>
-                                                    <div class="message_wrapper">
-                                                        <h4 class="heading">Brian Michaels</h4>
-                                                        <blockquote class="message">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua butcher retro keffiyeh dreamcatcher synth.</blockquote>
-                                                        <br />
-                                                        <p class="url">
-                                                            <span class="fs1" aria-hidden="true" data-icon=""></span>
-                                                            <a href="#" data-original-title="">Download</a>
-                                                        </p>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <img src="https://colorlib.com/polygon/gentelella/images/img.jpg" class="avatar" alt="Avatar" />
-                                                    <div class="message_date">
-                                                        <h3 class="date text-info">24</h3>
-                                                        <p class="month">May</p>
-                                                    </div>
-                                                    <div class="message_wrapper">
-                                                        <h4 class="heading">Desmond Davison</h4>
-                                                        <blockquote class="message">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua butcher retro keffiyeh dreamcatcher synth.</blockquote>
-                                                        <br />
-                                                        <p class="url">
-                                                            <span class="fs1 text-info" aria-hidden="true" data-icon=""></span>
-                                                            <a href="#"><i class="fa fa-paperclip"></i> User Acceptance Test.doc </a>
-                                                        </p>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <img src="https://colorlib.com/polygon/gentelella/images/img.jpg" class="avatar" alt="Avatar" />
-                                                    <div class="message_date">
-                                                        <h3 class="date text-error">21</h3>
-                                                        <p class="month">May</p>
-                                                    </div>
-                                                    <div class="message_wrapper">
-                                                        <h4 class="heading">Brian Michaels</h4>
-                                                        <blockquote class="message">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua butcher retro keffiyeh dreamcatcher synth.</blockquote>
-                                                        <br />
-                                                        <p class="url">
-                                                            <span class="fs1" aria-hidden="true" data-icon=""></span>
-                                                            <a href="#" data-original-title="">Download</a>
-                                                        </p>
-                                                    </div>
-                                                </li>
-
-                                            </ul>
-                                            <!-- end recent activity -->
-
-                                        </div>
-                                        <div role="tabpanel" class="tab-pane fade" id="tab_content2" aria-labelledby="profile-tab">
-
-                                            <!-- start user projects -->
-                                            <table class="data table table-striped no-margin">
-                                                <thead>
-                                                <tr>
-                                                    <th>#</th>
-                                                    <th>Project Name</th>
-                                                    <th>Client Company</th>
-                                                    <th class="hidden-phone">Hours Spent</th>
-                                                    <th>Contribution</th>
-                                                </tr>
-                                                </thead>
-                                                <tbody>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>New Company Takeover Review</td>
-                                                    <td>Deveint Inc</td>
-                                                    <td class="hidden-phone">18</td>
-                                                    <td class="vertical-align-mid">
-                                                        <div class="progress">
-                                                            <div class="progress-bar progress-bar-success" data-transitiongoal="35" aria-valuenow="35" style="width: 35%;"></div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>2</td>
-                                                    <td>New Partner Contracts Consultanci</td>
-                                                    <td>Deveint Inc</td>
-                                                    <td class="hidden-phone">13</td>
-                                                    <td class="vertical-align-mid">
-                                                        <div class="progress">
-                                                            <div class="progress-bar progress-bar-danger" data-transitiongoal="15" aria-valuenow="15" style="width: 15%;"></div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3</td>
-                                                    <td>Partners and Inverstors report</td>
-                                                    <td>Deveint Inc</td>
-                                                    <td class="hidden-phone">30</td>
-                                                    <td class="vertical-align-mid">
-                                                        <div class="progress">
-                                                            <div class="progress-bar progress-bar-success" data-transitiongoal="45" aria-valuenow="45" style="width: 45%;"></div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>4</td>
-                                                    <td>New Company Takeover Review</td>
-                                                    <td>Deveint Inc</td>
-                                                    <td class="hidden-phone">28</td>
-                                                    <td class="vertical-align-mid">
-                                                        <div class="progress">
-                                                            <div class="progress-bar progress-bar-success" data-transitiongoal="75" aria-valuenow="75" style="width: 75%;"></div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                </tbody>
-                                            </table>
-                                            <!-- end user projects -->
-
-                                        </div>
-                                        <div role="tabpanel" class="tab-pane fade active in" id="tab_content3" aria-labelledby="profile-tab">
-                                            <p>xxFood truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial
-                                                PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="block-grey">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="font-weight-m">Name</td>
+                                <td class="text-right">John Doe</td>
+                            </tr>
+                            <tr>
+                                <td class="font-weight-m">Date of birth</td>
+                                <td class="text-right">November 24, 1990</td>
+                            </tr>
+                            <tr>
+                                <td class="font-weight-m">E-mail</td>
+                                <td class="text-right"><a href="mailto:info@yourdomain.com">info@yourdomain.com</a></td>
+                            </tr>
+                            <tr>
+                                <td class="font-weight-m">Address</td>
+                                <td class="text-right">144 King St, Melbourne VIC</td>
+                            </tr>
+                            <tr>
+                                <td class="font-weight-m">Phone</td>
+                                <td class="text-right"><a href="tel:01234567890">012-3456-7890</a></td>
+                            </tr>
+                            <tr>
+                                <td class="font-weight-m">Website</td>
+                                <td class="text-right"><a href="www.themeforest.net">www.themeforest.net</a></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="font-weight-m">
+                                    <i class="fa fa-circle green-marker" aria-hidden="true"></i>Available for freelance
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </section>
         </div>
@@ -339,7 +65,6 @@
     </div>
 </div>
 <script th:replace="/fragments/scripts::common"></script>
-<script type="text/babel" th:src="@{/js/home/main.jsx}"></script>
 
 </body>
 </html>
